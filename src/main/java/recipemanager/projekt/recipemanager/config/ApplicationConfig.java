@@ -1,13 +1,11 @@
 package recipemanager.projekt.recipemanager.config;
 
 
-
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -26,7 +24,7 @@ public class ApplicationConfig {
     final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
     final CorsConfiguration config = new CorsConfiguration();
     config.setAllowCredentials(true);
-    config.setAllowedOrigins(Arrays.asList("http://localhost:4200","http://localhost:8089"));
+    config.setAllowedOrigins(Arrays.asList("http://localhost:4200","http://localhost:8080"));
     config.setAllowedHeaders(Arrays.asList(
             HttpHeaders.ORIGIN,
             HttpHeaders.CONTENT_TYPE,

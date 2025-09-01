@@ -1,19 +1,22 @@
-package recipemanager.projekt.recipemanager.controller.request;
+package recipemanager.projekt.recipemanager.controller.response;
 
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
+
+import java.util.List;
 
 @Data
 @SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
-public class InstructionRequest {
-
+public class FoodResponse {
 
     private Long id;
-    private String description;
+
+    private String consistency;
+    private String unit;
+
 }
